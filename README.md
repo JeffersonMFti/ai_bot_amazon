@@ -339,9 +339,9 @@ Consulte [docs/AGENT_RULES.md](docs/AGENT_RULES.md) para as regras completas de 
 | Item | Custo estimado |
 |---|---|
 | Hetzner VPS CX22 | ~R$ 25/mês |
-| UAZAPI self-hosted | ~R$ 47/mês |
+| UAZAPI self-hosted | ~R$ 29/mês |
 | OpenAI API (GPT-4o-mini) | ~R$ 5–10/mês |
-| **Total** | **~R$ 77–82/mês** |
+| **Total** | **~R$ 59–64/mês** |
 
 O programa de afiliados Amazon paga entre **2% e 10%** de comissão por venda dependendo da categoria.  
 Com R$ 1.500 em vendas mensais geradas o projeto já se paga — a partir daí, lucro líquido.
