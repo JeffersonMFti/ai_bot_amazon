@@ -1,0 +1,46 @@
+# ─── Credenciais — NUNCA versionar ───────────────────────
+.env
+
+# ─── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+.installed.cfg
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.eggs/
+
+# ─── Banco de dados ───────────────────────────────────────
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# ─── Logs ─────────────────────────────────────────────────
+logs/*.log
+logs/*.log.*
+
+# ─── IDEs ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ─── Docker ───────────────────────────────────────────────
+*.env.local

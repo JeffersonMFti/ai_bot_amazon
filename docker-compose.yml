@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  bot:
+    build: .
+    container_name: amazon_affiliate_bot
+    restart: always
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      - uazapi
+    networks:
+      - bot_network
+
+  uazapi:
+    image: uazapi/uazapi:latest
+    container_name: uazapi
+    restart: always
+    ports:
+      - "127.0.0.1:3000:3000"   # porta acessível apenas localmente — não exposta na internet
+    volumes:
+      - uazapi_data:/app/data
+    environment:
+      - ADMINTOKEN=${UAZAPI_ADMINTOKEN}
+    networks:
+      - bot_network
+
+volumes:
+  uazapi_data:
+
+networks:
+  bot_network:
+    driver: bridge
