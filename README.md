@@ -322,7 +322,7 @@ ai_bot_amazon/
 ### 🔜 Fase 8 — Otimizações Futuras
 - [ ] Rastrear cliques com UTM / link encurtador (Bitly, etc.)
 - [ ] A/B testing de horários e formatos de copy
-- [ ] Enviar imagem do produto junto com o texto (`POST /send/media`)
+- [x] Enviar imagem do produto junto com o texto (`POST /send/media`)
 - [ ] Ampliar subcategorias de busca (esportes, casa, etc.)
 - [ ] Escalar para múltiplos grupos WhatsApp
 

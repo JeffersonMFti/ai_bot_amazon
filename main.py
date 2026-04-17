@@ -101,7 +101,7 @@ def criar_job(
 
             copy = openai_copy.gerar(produto)
             mensagem = formatar_mensagem(copy, produto.url_afiliado)
-            sucesso = whatsapp.enviar_grupo(mensagem)
+            sucesso = whatsapp.enviar_grupo_com_midia(mensagem, produto.imagem_url or "")
 
             if sucesso:
                 repositorio.registrar_enviado(

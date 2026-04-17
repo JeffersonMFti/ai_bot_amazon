@@ -24,7 +24,7 @@ _SEARCH_RESOURCES = [
     SearchItemsResource.CUSTOMERREVIEWS_STARRATING,
     SearchItemsResource.CUSTOMERREVIEWS_COUNT,
     SearchItemsResource.ITEMINFO_CLASSIFICATIONS,
-    SearchItemsResource.IMAGES_PRIMARY_MEDIUM,
+    SearchItemsResource.IMAGES_PRIMARY_LARGE,
 ]
 
 # Categorias de beleza feminina mapeadas para browse nodes
@@ -155,8 +155,8 @@ class AmazonService:
                     num_reviews = item.customer_reviews.count.value or 0
 
             imagem_url = None
-            if item.images and item.images.primary and item.images.primary.medium:
-                imagem_url = item.images.primary.medium.url
+            if item.images and item.images.primary and item.images.primary.large:
+                imagem_url = item.images.primary.large.url
 
             categoria = "beleza"
             if item.item_info.classifications:
